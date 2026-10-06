@@ -41,7 +41,7 @@ public class UsuarioController {
     @ApiResponse(responseCode = "200", description = "Usuário logado com sucesso!")
     @ApiResponse(responseCode = "401", description = "Credencias inválidas")
     @ApiResponse(responseCode = "500", description = "Erro de servidor")
-    public LoginResponseDTO login(@RequestBody LoginRequestDTO loginRequestDTO){
+    public String login(@RequestBody LoginRequestDTO loginRequestDTO){
 
         return usuarioService.loginUsuario(loginRequestDTO);
     }
