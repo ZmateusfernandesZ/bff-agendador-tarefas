@@ -16,6 +16,6 @@ public class UsuarioRequestDTO {
     private String nome;
     private String email;
     private String senha;
-    private List<EnderecoResponseDTO> enderecos;
-    private List<TelefoneResponseDTO> telefones;
+    private List<EnderecoRequestDTO> enderecos;
+    private List<TelefoneRequestDTO> telefones;
 }

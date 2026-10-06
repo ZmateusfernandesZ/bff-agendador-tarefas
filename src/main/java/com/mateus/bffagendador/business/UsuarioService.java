@@ -23,8 +23,8 @@ public class UsuarioService {
 
     }
 
-    public LoginResponseDTO loginUsuario(LoginRequestDTO loginRequestDTO){
-        return client.login(loginRequestDTO);
+    public String loginUsuario(LoginRequestDTO loginRequestDTO){
+        return client.login(loginRequestDTO).token();
     }
 
     public UsuarioResponseDTO buscarUsuarioPorEmail (String email, String token) {
